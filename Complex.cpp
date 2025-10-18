@@ -107,7 +107,7 @@ Complexe Complexe::operator/(Complexe P)
 	numerator = this->operator*(cj);
 	float denom = (P * cj).getrealpart(); // To get the real part of the denominator after we multiply P by it's conjugate
 	if(denom==0){
-		cout << "undefined dividion by zero!" << endl;
+		cout << "undefined: division by zero!" << endl;
 		exit(-1);
 	}
 	Z.re = (numerator.re) / denom;
